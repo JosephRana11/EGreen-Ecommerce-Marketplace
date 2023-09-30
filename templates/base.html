@@ -24,17 +24,16 @@
         display: flex;
         flex-direction: column;
       }
-
       .footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 50px;
-        background-color: #596c47;
-        color: white;
-        padding: 10px;
-        box-sizing: border-box;
-      }
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 50px;
+      background-color: #596c47;
+      color: white;
+      padding: 10px;
+      box-sizing: border-box;
+    }
       .highlight{
         color: rgb(7, 247, 7);
       }
@@ -53,7 +52,7 @@
               <a class="nav-link active" aria-current="page" href="{% url 'home'%}">Home</a>{% csrf_token %}
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="{% url 'about'%}">About</a>{% csrf_token %}
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

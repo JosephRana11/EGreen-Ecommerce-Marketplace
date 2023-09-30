@@ -4,7 +4,7 @@ from product.models import Product
 from django.contrib.auth import authenticate , login , logout
 
 def home_view(request):
-  obj = Product
+  obj = Product.objects.filter(is_approved=True)
   context = {
     'obj':obj
   }
@@ -27,3 +27,6 @@ def login_view(request):
 def logout_view(request):
   logout(request)
   return redirect('home')
+
+def about_view(request):
+  return render(request , 'about.html')
