@@ -72,7 +72,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Customer Support</a>
+              <a class="nav-link" href="{% url 'contact'%}">Customer Support</a>{% csrf_token %}
             </li>
             {% if user.is_authenticated %}
               <li class="nav-item">
