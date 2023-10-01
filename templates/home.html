@@ -16,7 +16,7 @@ EverGreen MarketPlace
   <img src="{{item.image_link}}">
 	<figcaption>{{item.product_name}}</figcaption>
     <span class="price">${{item.price}}</span>
-    <a class="button" href="#">Buy Now</a>
+    <a class="button" href="{% url 'product' item.pk %}">Buy Now</a>
 	</figure>
   {% endfor  %}
 	</div>

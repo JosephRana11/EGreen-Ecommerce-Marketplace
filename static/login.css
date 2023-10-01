@@ -84,7 +84,7 @@ form .row input::placeholder{
   text-decoration: underline;
 }
 .wrapper form .button input{
-  color: #fff;
+  color: black;
   font-size: 20px;
   font-weight: 500;
   padding-left: 0px;
